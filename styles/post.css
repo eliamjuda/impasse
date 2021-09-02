@@ -1,0 +1,553 @@
+.hero-image{
+
+	min-height: 80vh;
+	width: 100vw;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.header-gradient{
+	background-image: linear-gradient(to bottom, transparent, var(--black-main));
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+}
+
+
+.header-img{
+	width: 100vw;
+	height: 100vh;
+	background: red;
+}
+
+.header-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+
+
+
+.text-container{
+	height:  auto;
+	width: 100%;
+	/*background: peru;*/
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.header-text{
+	position: absolute;
+	left: 0;
+	/*background: blue;*/
+	top: 0;
+	padding-bottom: 15%;
+
+	min-width: 100%;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+
+.author-container{
+	min-width: 100%;
+	height: 100px;
+	position: relative;
+	/*background: red;*/
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.author-container-image{
+	/*background: yellow;*/
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+.author-container-text{
+	/*background: orange;*/
+	height: auto;
+	width: auto;
+	margin-left: 5px;
+	font-family: 'Roboto Mono', monospace;
+	color: var(--white-sec);
+}
+
+
+.header-text h3{
+
+	line-height: 50px;
+	color: var(--white-main);
+	/*padding: 0;*/
+	/*text-shadow: 2px 2px 7px #0008;*/
+	font-weight: 700;
+	font-size: 40px;
+}
+
+
+.admin-panel{
+	/*background: peru;*/
+	width: 100%;
+	min-height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*-------------------- SECTION 1 / PANEL ADMINISTRACION -------------*/
+
+.admin-panel-form input{
+	margin: 10px 10px;
+	width: 100px;
+	height: 30px;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	background-color: var(--black-sec);
+	box-shadow: 0px 2px 10px 0px #0004;
+	color: var(--white-sec);
+	font-family: 'Roboto Mono', monospace;
+	cursor: pointer;
+
+}
+
+/*-------------------- SECTION 1 / POST -------------*/
+
+.post-container{
+	width: 100vw;
+	min-height: 100vh;
+	/*background: peru;*/
+	position: relative;
+
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.post{
+	/*background-color: violet;*/
+	width: 95%;
+	height: 90%;
+	padding: 80px 15px 50px 15px;
+}
+
+.author{
+	background: var(--black-sec);
+	padding: 0px 10px;
+	width: 95%;
+	min-height: 100px;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.author-image{
+	/*background: orange;*/
+	width: 15%;
+	height: 50%;
+	border-radius: 50%;
+}
+
+.author-image img,
+.author-container-image img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.author-info{
+	/*background: green;*/
+	min-height: 80px;
+	padding: 10px 20px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.author-name{
+	/*background: violet;*/
+	/*padding: 10px 20px;*/
+	font-size: 15px;
+	display: flex;
+	margin: 0px;
+	height: 25px;
+}
+
+.author-description{
+	/*background: yellow;*/
+	min-height: 10px;
+	margin: 5px 0px;
+	display: flex;
+	font-size: 13px;
+
+}
+
+.author-social{
+	/*background: peru;*/
+	/*padding: 10px 20px;*/
+}
+
+.author-social a{
+	color: var(--white-main);
+	font-size: 18px;
+	margin: 0px 5px;
+}
+
+/*------------------------ SECTION 2 / COMMENT SECTION ----------------*/
+
+.comment-container,
+.write-comment-container{
+	width: 100vw;
+	/*height: 100vh;*/
+	position: relative;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	/*background-color: peru;*/
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.comment-h1,
+.write-comment-h1{
+	/*background-color: red;*/
+	width: 80%;
+	padding: 10px 20px;
+	align-self: flex-start;
+}
+
+.comment-h1 h1,
+.write-comment-h1 h1{
+	margin: 0px 0px;
+}
+
+
+.comments,
+.form-container{
+	/*background-color: green;*/
+	width: 100vw;
+	position: relative;
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.comment{
+	/*background: orange;*/
+
+	background-color: var(--black-sec);
+	width: 95%;
+	min-height: 100px;
+	border-radius: 3px;
+	margin: 15px 0px;
+	border-top-left-radius: 25px;
+
+
+	display: flex;
+	justify-content: flex-end;
+}
+
+.comment-image{
+	/*background-color: yellow;*/
+	position: absolute;
+	left: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.comment-image img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+}
+
+.comment-box{
+	/*background: violet;*/
+	height: 100%;
+	width: 85%;
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+}
+
+.comment-info{
+	width: 100%;
+	/*height: 60px;*/
+	align-self: flex-end;
+	border-radius: 3px;
+	/*background-color: blue;*/
+
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px;
+}
+.comment-text{
+	max-width: 100%;
+	min-height: 70px;
+	/*background-color: red;*/
+	border-radius: 3px;
+	padding: 0px 20px 5px 10px;
+	font-size: 14px;
+	/*font-family: 'Roboto Mono', monospace;*/
+	color: var(--white-sec);
+}
+
+.comment-user{
+	color: var(--white-main);
+	font-weight: 600;
+}
+
+/*------------------------ SECTION 3 / COMMENTS ----------------*/
+
+.form-container{
+	/*background: peru;*/
+	min-width: 100vw;
+	/*min-height: 100vh;*/
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 10px 10px;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+	/*background-color: violet;*/
+}
+
+.form > input,
+.form > textarea{
+
+	width: 90%;
+	font-size: 16px;
+	font-family: 'Roboto Mono', monospace;
+	color: var(--white-sec);
+	outline: none;
+	border: none;
+	padding: 10px 10px;
+	margin: 5px 15px
+}
+
+.form > input{
+	height: 40px;
+	background-color: var(--black-sec);
+
+}
+
+.form > textarea{
+	resize: none;
+	min-height: 150px;
+	background-color: var(--black-sec);
+}
+
+.form > input[type=submit]{
+	cursor: pointer;
+	transition: ease 0.3s;
+}
+
+.form > input[type=submit]:hover{
+	cursor: pointer;
+	color: var(--white-main);
+}
+
+/*------------------------ ESTILOS DE TEXTO ----------------*/
+
+.post > p{
+	font-size: 20px;
+	font-weight: 600;
+	color: #C2BCCE;
+}
+
+.post > b{
+	font-weight: 700;
+}
+
+.post > h1{
+	line-height: 30px;
+}
+
+@media (min-width: 1024px) {
+	/*--------- GLOBAL ----------------------*/
+		.menu{
+			/*background-color: var(--black-sec);*/
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			min-height: 80px;
+
+		}
+
+		.menu-logo{
+			display: flex;
+		}
+		
+		.menu button{
+			display: none;
+		}
+
+		.ul-menu{
+			display: flex;
+		}
+		
+		h1{
+			font-size: 40px;
+		}
+
+		h2{
+			font-size: 25px;
+		}
+
+		.date,
+		.author,
+		.separador,
+		.category{
+			font-size: 16px;
+		}
+
+	/*-----------------SECTION 2 / post ------------------*/
+
+	/*-------------------- SECTION 1 / POST -------------*/
+
+
+		.post{
+			width: 55%;
+		}
+
+		.author{
+			width: 55%;
+			height: 150px;
+		}
+
+		.author-image{
+			width: 65px;
+			height: 60px;
+		}
+
+
+		.author-name{
+			padding-bottom: 15px;
+		}
+
+
+		.author-social a{
+			font-size: 20px;
+		}
+
+
+		.author-description{
+			font-size: 15px;
+
+		}
+
+
+	/*------------------------ SECTION 2 / COMMENT SECTION ----------------*/
+
+
+		.comment-h1,
+		.write-comment-h1{
+			width: 60%;
+			padding: 50px 20px;
+			align-self: center;
+		}
+
+
+		.comment{
+
+			width: 55%;
+			border-top-left-radius: 25px;
+		}
+
+		.comment-image{
+			position: absolute;
+			left: 22.7%;
+		}
+
+
+		.comment-box{
+			width: 90%;
+		}
+
+	
+		.comment-info{
+			padding: 10px 10px;
+		}
+
+	/*------------------------ SECTION 3 / COMMENTS ----------------*/
+
+
+		.form{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 100%;
+		}
+
+		.form > input,
+		.form > textarea{
+
+
+			align-self: center;
+			width: 55%;
+			font-size: 18px;
+			margin: 10px 15px
+		}
+
+		.form > input{
+			height: 50px;
+
+		}
+
+		.form > textarea{
+			min-height: 200px;
+		}
+
+	/*------------------------ ESTILOS DE TEXTO ----------------*/
+
+	/*	.post > p{
+			font-size: 20px;
+			font-weight: 600;
+			color: var(--white-sec);
+		}
+
+		.post > b{
+			font-weight: 700;
+		}
+
+		.post > h1{
+			line-height: 30px;
+		}*/
+
+}

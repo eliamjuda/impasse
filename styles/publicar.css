@@ -1,0 +1,128 @@
+
+.form-container{
+	min-width: 100vw;
+	min-height: 100vh;
+	position: relative;
+	padding: 50px 0px;
+}
+
+form{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-h1{
+	text-align: center;
+}
+
+.form-inputs-container{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input,
+textarea,
+select{
+	margin: 5px;
+	font-family: 'Roboto Mono', monospace;
+	color: var(--white-sec);
+	border-radius: 5px;
+	background: var(--black-sec);
+	resize: none;
+	outline: none;
+	border: none;
+}
+
+.form-inputs-container > input,
+.form-inputs-container > textarea{
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+.form-inputs-container > input[type=text],
+.form-inputs-container > textarea,
+.form-inputs-container > select{
+	width: 100%;
+	padding: 20px 0px 20px 15px;
+}
+
+.form-inputs-container > label{
+	color: var(white-sec);
+}
+
+.form-content-container{
+	max-width: 100%;
+	margin: 15px;
+	padding: 0px 15px;
+}
+
+.form-content-container > input[type=submit]{
+	margin-top: 20px;
+	border: none;
+	width: 30%;
+	padding: 10px 10px;
+	cursor: pointer;
+}
+
+
+
+@media (min-width: 1024px) {
+	/*--------- GLOBAL ----------------------*/
+		.menu{
+			/*background-color: var(--black-sec);*/
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			min-height: 80px;
+
+		}
+
+		.menu-logo{
+			display: flex;
+		}
+		
+		.menu button{
+			display: none;
+		}
+
+		.ul-menu{
+			display: flex;
+		}
+		
+		h1{
+			font-size: 40px;
+		}
+
+		h2{
+			font-size: 25px;
+		}
+
+		.date,
+		.author,
+		.separador,
+		.category{
+			font-size: 16px;
+		}
+
+		.form-inputs-container{
+			width: 50%;
+		}
+
+		.form-container{
+			padding: 110px 0px;
+		}
+		input,
+		textarea,
+		select{
+			margin: 10px;
+		}
+
+
+}

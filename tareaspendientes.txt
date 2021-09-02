@@ -1,0 +1,4 @@
+- Search Post
+- Validar comentarios vacíos
+- Panel de administración 
+-Publicar, Editar, Eliminar (probarlos)

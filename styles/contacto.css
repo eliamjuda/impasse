@@ -1,0 +1,237 @@
+.hero-image{
+
+	height: 60vh;
+	width: 100vw;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.header-gradient{
+	background-image: linear-gradient(to bottom, transparent, var(--black-main));
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+}
+
+
+.header-img{
+	width: inherit;
+	height: inherit;
+}
+
+.header-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+
+
+
+.text-container{
+	height:  auto;
+	width: 100%;
+	/*background: peru;*/
+	margin-bottom: 10%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.header-text{
+	position: absolute;
+	left: 0;
+	/*background: blue;*/
+	top: 0;
+
+	min-width: 100%;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.header-punto{
+	font-size: 50px;
+}
+
+.header-text h1,
+.header-text label{
+	color: var(--white-main);
+	text-transform: uppercase;
+
+	padding: 0;
+	margin: 0;
+}
+
+.header-text h1{
+	text-shadow: 2px 2px 7px #0008;
+	font-weight: 700;
+	font-size: 50px;
+	letter-spacing: 1.5px;
+}
+
+.header-text label{
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+/*-------------------- SECTION 1 / CONTAINER -------------*/
+
+.contact-container{
+	/*background-color: red;*/
+	min-width: 100vw;
+	min-height: 100vh;
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-text{
+	/*background-color: yellow;*/
+	width: 100vw;
+	height: 20vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.contact-text hr{
+	width: 100px;
+}
+
+.contact-form{
+	/*background-color: blue;*/
+	min-width: 100vw;
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+.form{
+	/*background: yellow;*/
+	width: 100%;
+	padding-top: 50px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input,
+textarea{
+	font-family: 'Roboto Mono', monospace;
+	color: var(--white-sec);
+	border-radius: 5px;
+	background: var(--black-sec);
+	resize: none;
+}
+
+.form > input,
+.form > textarea{
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+.form > input[type=text],
+.form > textarea{
+	width: 80%;
+	padding: 20px 0px 20px 15px;
+}
+
+.form > input[type=submit]{
+	margin-top: 20px;
+	width: 30%;
+	padding: 10px 10px;
+	cursor: pointer;
+}
+
+
+
+@media (min-width: 1024px) {
+	/*--------- GLOBAL ----------------------*/
+		.menu{
+			/*background-color: var(--black-sec);*/
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			min-height: 80px;
+
+		}
+
+		.menu-logo{
+			display: flex;
+		}
+		
+		.menu button{
+			display: none;
+		}
+
+		.ul-menu{
+			display: flex;
+		}
+		
+		h1{
+			font-size: 40px;
+		}
+
+		h2{
+			font-size: 25px;
+		}
+
+		.date,
+		.author,
+		.separador,
+		.category{
+			font-size: 16px;
+		}
+
+
+		.footer-info h1{
+			font-size: 60px;
+		}
+
+		.footer-info label{
+			font-size: 20px;
+		}
+
+
+		.footer-help{
+			margin-top: 30px;
+		}
+
+		.footer-help label{
+			font-size: 25px;
+		}
+		
+
+	.form > input[type=text],
+	.form > textarea{
+		width: 60%;
+		padding: 20px 0px 20px 15px;
+	}
+
+
+}
